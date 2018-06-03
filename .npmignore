@@ -1,0 +1,10 @@
+/src/
+/types/
+/test/
+
+/dist/examples/
+/dist/test/
+/coverage/
+
+/tsconfig.json
+.*

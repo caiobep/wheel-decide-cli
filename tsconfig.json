@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "stripInternal": true,
+    "newLine": "LF",
+    "rootDir": "src",
+    "outDir": "dist",
+  },
+  "include": [
+    "src",
+  ]
+}

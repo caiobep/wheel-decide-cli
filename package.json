@@ -1,0 +1,50 @@
+{
+  "name": "wheel-decide-cli",
+  "version": "0.0.0",
+  "description": "A command Line interface for Wheel Decide",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "build": "npm run lint && rimraf dist && tsc",
+    "bare-test": "mocha && baseman run dist/test/baseman",
+    "pre-test": "npm run build",
+    "test": "nyc npm run bare-test",
+    "report-coverage": "cat coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiobep/wheel-decide-cli.git"
+  },
+  "keywords": [
+    "wheel-decide",
+    "cli",
+    "command line interface"
+  ],
+  "author": "Caio Amaral Corrêa <caiobep@me.com> (https://github.com/caiobep)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caiobep/wheel-decide-cli/issues"
+  },
+  "homepage": "https://github.com/caiobep/wheel-decide-cli#readme",
+  "devDependencies": {
+    "@types/chalk": "~2.2.0",
+    "@types/inquirer": "0.0.41",
+    "@types/node": "~10.3.0",
+    "baseman": "0.1.0-dev.8",
+    "coveralls": "~3.0.1",
+    "glob": "~7.1.2",
+    "nyc": "~12.0.1",
+    "rimraf": "~2.6.2",
+    "source-map-support": "~0.5.6",
+    "ts-node": "~6.1.0",
+    "tslint": "~5.10.0",
+    "tslint-config-prettier": "~1.13.0",
+    "tslint-immutable": "~4.5.4",
+    "typescript": "~2.9.1"
+  },
+  "dependencies": {
+    "chalk": "~2.4.1",
+    "commander": "~2.15.1"
+  }
+}
