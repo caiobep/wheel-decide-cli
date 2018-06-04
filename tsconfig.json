@@ -10,6 +10,9 @@
     "newLine": "LF",
     "rootDir": "src",
     "outDir": "dist",
+    "lib": [
+      "es2018"
+    ]
   },
   "include": [
     "src",
